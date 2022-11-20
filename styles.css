@@ -1,0 +1,94 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 69px; 
+    box-shadow: 1px 2px 13px #aaa1c8
+}
+
+@keyframes avatar-hover {
+  0%   {box-shadow: 1px 2px 69px #d5c6e0;}
+  25%  {box-shadow: 1px 2px 3px #aaa1c8;}
+  50%  {box-shadow: 1px 2px 30px #967aa1;}
+  100% {box-shadow: 1px 2px 25px #967aa1;}
+}
+
+.avatar:hover {
+    width: 150px;
+    border-radius: 69px; 
+    box-shadow: 1px 2px 25px #967aa1;
+    animation-name: avatar-hover;
+    animation-duration: 1s;
+}
+
+@keyframes text-hover {
+  0%   {text-shadow: 0 0 3px #192a51;}
+  25%  {text-shadow: 4px 0 7px #967aa1;}
+  62%  {text-shadow: -3px 0 2px #967aa1;}
+  100% {text-shadow: 0 0 5px #192a51;}
+}
+
+.animate-on-hover-text:hover {
+    animation-name: text-hover;
+    animation-duration: 1s;
+    text-shadow: 0 0 5px #192a51;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: end;
+    background: #f5e6e8;
+    color: #192a51;
+    border-bottom: 6px ridge #192a51;
+    border-left: 7px ridge #192a51;
+    border-top: 6px groove #967aa1;
+    border-right: 6px groove #967aa1;
+    border-top-left-radius: 120px; 
+    border-bottom-right-radius: 32px;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.card:hover {
+    box-shadow: 1px 2px 25px #967aa1;
+    animation-name: avatar-hover;
+    animation-duration: 1s;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
